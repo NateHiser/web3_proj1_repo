@@ -9,11 +9,15 @@ a:hover {
     color: grey;
 }
 
+
 body{
     background-color:white;
     width:360px;
     margin:0 auto;
 
+    @media screen and (min-width:600px) {
+      width:600px;
+    }
 }
 
 button{
@@ -26,14 +30,15 @@ button{
     border:none;
 }
 
-.description li {
-    list-style: circle;
-}
-
 .description{
-    background-color:#E8E8E8;
+    background-color:white;
     display:block;
     padding: 5px 20px;
+
+    li {
+        list-style: circle;
+        font-size:1.4rem;
+    }
 }
 
 footer {
@@ -49,22 +54,28 @@ h2 {
     margin:-10px 0 0 0;
     padding: 10px 0 10px 20px;
     width:340px;
-    background-color:#E8E8E8;
+    background-color:white;
     font-size:1.4rem;
+
+    @media screen and (min-width:600px) {
+      width:580px;
+      margin-top:0;
+      padding-right:0;
+  }
 }
 
 h3 {
     margin-left:20px;
     font-family: "oswald";
     font-size:2.3rem;
+
+    @media screen and (min-width:600px) {
+        width:100%;
+    }
 }
 
 h4 {
     font-family: "oswald";
-    font-size:1.4rem;
-}
-
-.description li{
     font-size:1.4rem;
 }
 
@@ -74,12 +85,32 @@ html {
 }
 
 header{
-    margin: 0 auto;
-}
 
-header nav li {
-    display:none;
-    font-family: "lago";
+    margin: 0 auto;
+
+    nav li {
+        display:none;
+        font-family: "lago";
+        font-size: 2.3rem;
+    }
+
+    @media screen and (min-width:600px) {
+        padding-top:35px;
+        padding-left:10px;
+        display:flex;
+
+        nav ul {
+              padding-left:0px;
+              display:flex;
+
+              li {
+                  margin-left:12px;
+                  margin-top:10px;
+                  display:block;
+                  font-size:1.5rem;
+            }
+        }
+    }
 }
 
 input {
@@ -91,16 +122,23 @@ input {
 form {
     padding-left:20px;
     display:flex;
+
+    p{
+       margin-top:50px;
+       padding-right:15px;
+    }
 }
 
-form p{
-   margin-top:50px;
-   padding-right:15px;
-}
+.large {
 
-.large img{
+  img{
     margin-left:20px;
     width:320px;
+  }
+
+  @media screen and (min-width:600px) {
+  width:50%;
+  }
 }
 
 li {
@@ -122,20 +160,15 @@ li {
 .names{
     flex-flow:row wrap;
     display:flex;
-}
 
-.names p{
-    width:60%;
-}
+  p{
+      width:60%;
+  }
 
-.names img{
-    margin-top:14px;
-    height:20px;
-}
-
-.name {
-    width:100%;
-    margin-top:25px;
+  img{
+      margin-top:14px;
+      height:20px;
+  }
 }
 
 p {
@@ -143,24 +176,26 @@ p {
     font-size:1.4rem;
 }
 
-.products ul{
+.products {
+  ul{
     display:flex;
     flex-flow:row wrap;
-}
+  }
 
-.products li{
+  li{
     box-sizing:border-box;
     justify-content:space-between;
     width:50%;
     padding-bottom:20px;
-}
 
-.products li p{
-    margin: 0px;;
-}
+    p{
+        margin: 0px;
+    }
+  }
 
-.products img {
-    width:123px;
+  img {
+      width:123px;
+  }
 }
 
 .pictures ul{
@@ -171,73 +206,52 @@ p {
     padding: 0 20px;
 }
 
+.reviewerName {
+    width:100%;
+    margin-top:25px;
+}
+
 .subnav{
     background-color:#E8E8E8;
     padding-top: 20px;
     padding-bottom:60px;
 }
 
-.subnav li {
+.subnav {
+  li {
     margin-top:10px;
     padding-top:20px;
     font-size:1.8rem;
-}
 
-.subnav li li{
-    margin-top:10px;
-    font-size:1.4rem;
+    li{
+      margin-top:10px;
+      font-size:1.4rem;
+    }
+  }
 }
 
 .thumbnails{
     display:flex;
     flex-flow:row wrap;
-}
-.thumbnails li{
+
+  li{
     width:40%;
     margin-left:25px;
     margin-top:10px;
     justify-content:space-around;
-}
-.thumbnails img{
-    width:120px;
-}
-@media screen and (min-width:600px) {
+  }
 
-    body {
-        width:600px;
-    }
+  img{
+      width:120px;
+  }
+}
+
+
+@media screen and (min-width:600px) {
 
     .content {
         display:flex;
         flex-flow:row-reverse;
-    }
-
-    h2 {
-        width:580px;
-        margin-top:0;
-        padding-right:0;
-    }
-
-    h3 {
-        width:100%;
-    }
-
-    header {
-        padding-top:35px;
-        padding-left:10px;
-        display:flex;
-    }
-
-    header nav ul {
-        padding-left:0px;
-        display:flex;
-    }
-
-    header nav li {
-        margin-left:12px;
-        margin-top:10px;
-        display:block;
-        font-size:1.5rem;
     }
 
     .large{
