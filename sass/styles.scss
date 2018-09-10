@@ -18,6 +18,9 @@ body{
     @media screen and (min-width:600px) {
       width:600px;
     }
+    @media screen and (min-width:1200px) {
+        width:1200px;
+    }
 }
 
 button{
@@ -38,6 +41,13 @@ button{
     li {
         list-style: circle;
         font-size:1.4rem;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top:-90px;
+        padding-top:70px;
+        background-color:#E8E8E8;
+        width:31.5%;
     }
 }
 
@@ -61,7 +71,10 @@ h2 {
       width:580px;
       margin-top:0;
       padding-right:0;
-  }
+    }
+    @media screen and (min-width:1200px) {
+          width:1180px;
+    }
 }
 
 h3 {
@@ -71,6 +84,9 @@ h3 {
 
     @media screen and (min-width:600px) {
         width:100%;
+    }
+    @media screen and (min-width:1200px) {
+      margin-bottom:0;
     }
 }
 
@@ -113,6 +129,14 @@ header{
             }
         }
     }
+
+    @media screen and (min-width:1200px) {
+
+      nav li{
+        margin-left:60px;
+        font-size:2.3rem;
+      }
+    }
 }
 
 input {
@@ -146,6 +170,14 @@ form {
         margin-right:0px;
         width:430px;
     }
+  }
+  @media screen and (min-width:1200px) {
+      margin-bottom:40px;
+      margin-left:100px;
+
+      img{
+          width:530px;
+      }
   }
 }
 
@@ -260,6 +292,17 @@ p {
 }
 .reviews{
     padding: 0 20px;
+
+    @media screen and (min-width:600px) {
+      ul li{
+          margin-bottom:60px;
+          display:flex;
+
+          p{
+              margin:15px 90px 15px 20px;
+          }
+      }
+    }
 }
 
 .reviewerName {
@@ -284,6 +327,15 @@ p {
       font-size:1.4rem;
     }
   }
+
+  @media screen and (min-width:600px) {
+
+        width:225px;
+        padding-top:0px;
+        li {
+          width:190px;
+        }
+  }
 }
 
 .thumbnails{
@@ -300,6 +352,19 @@ p {
   img{
       width:120px;
   }
+
+  @media screen and (min-width:600px) {
+
+      width:25%;
+
+      li{
+        width:130px;
+      }
+
+      img{
+        width:110px;
+      }
+  }
 }
 
 
@@ -314,82 +379,14 @@ p {
         width:100%;
     }
 
-    .reviews ul li{
-        margin-bottom:60px;
-        display:flex;
-    }
-
-    .reviews ul li p{
-        margin:15px 90px 15px 20px;
-    }
-
     .selected {
         font-weight:bold;
     }
-
-    .subnav {
-        width:225px;
-    }
-
-    .subnav li {
-        width:190px;
-    }
-
-    .subnav{
-        padding-top:0px;
-    }
-
-    .thumbnails{
-        width:25%;
-    }
-
-    .thumbnails li{
-        width:130px;
-    }
-
-    .thumbnails img{
-        width:110px;
-    }
-
 }
 @media screen and (min-width:1200px) {
-
-    body{
-        width:1200px;
-    }
-
-    h2{
-        width:1180px;
-    }
-
-    h3{
-    margin-bottom:0;
-    }
-
-    header nav li{
-        margin-left:60px;
-        font-size:2.3rem;
-    }
-
-    .description{
-        margin-top:-90px;
-        padding-top:70px;
-        background-color:#E8E8E8;
-        width:31.5%;
-    }
-
     .info {
         display:flex;
         flex-flow:row wrap;
-    }
-
-    .large{
-        margin-bottom:40px;
-        margin-left:100px;
-    }
-
-    .large img{
-        width:530px;
     }
 
     .pictures{
