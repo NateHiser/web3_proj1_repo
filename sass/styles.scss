@@ -95,11 +95,13 @@ header{
     }
 
     @media screen and (min-width:600px) {
+
         padding-top:35px;
         padding-left:10px;
         display:flex;
 
         nav ul {
+
               padding-left:0px;
               display:flex;
 
@@ -137,7 +139,13 @@ form {
   }
 
   @media screen and (min-width:600px) {
-  width:50%;
+
+      width:50%;
+
+    img{
+        margin-right:0px;
+        width:430px;
+    }
   }
 }
 
@@ -149,12 +157,23 @@ li {
 .logo{
     margin-left:30px;
     width:175px;
+
+    @media screen and (min-width:600px) {
+        width:150px;
+        margin-left:0px;
+    }
 }
 
-.menu img{
-    margin-left:20px;
-    padding-bottom:5px;
-    width:40px;
+.menu {
+  img{
+      margin-left:20px;
+      padding-bottom:5px;
+      width:40px;
+  }
+
+  @media screen and (min-width:600px) {
+      display:none;
+  }
 }
 
 .names{
@@ -168,6 +187,20 @@ li {
   img{
       margin-top:14px;
       height:20px;
+  }
+
+  @media screen and (min-width:600px) {
+
+        width:20%;
+        display:block;
+
+        img {
+        margin:-15px 0px;
+        }
+
+        .reviewerName {
+        margin-bottom:-15px;
+        }
   }
 }
 
@@ -196,12 +229,35 @@ p {
   img {
       width:123px;
   }
+
+  @media screen and (min-width:600px) {
+
+    ul{
+        margin:-20px;
+    }
+
+    li {
+        padding-top:30px;
+        width:50%;
+        img{
+            width:160px;
+        }
+    }
+  }
 }
 
-.pictures ul{
+.pictures {
+
+  ul{
     padding-left:0px;
-}
+  }
 
+  @media screen and (min-width:600px) {
+    .pictures ul{
+        display:flex;
+    }
+  }
+}
 .reviews{
     padding: 0 20px;
 }
@@ -254,56 +310,8 @@ p {
         flex-flow:row-reverse;
     }
 
-    .large{
-        width:50%;
-    }
-
-    .large img{
-        margin-right:0px;
-        width:430px;
-    }
-
-    .logo {
-        width:150px;
-        margin-left:0px;
-    }
-
-    .menu {
-        display:none;
-    }
-
-    .names{
-        width:20%;
-        display:block;
-    }
-
-    .names img{
-        margin:-15px 0px;
-    }
-
-    .names .name{
-        margin-bottom:-15px;
-    }
-
     nav {
         width:100%;
-    }
-
-    .pictures ul{
-        display:flex;
-    }
-
-    .products li {
-        padding-top:30px;
-        width:50%;
-    }
-
-    .products li img{
-        width:160px;
-    }
-
-    .products ul{
-        margin:-20px;
     }
 
     .reviews ul li{

@@ -90,6 +90,7 @@ header {
 header nav li {
   display: none;
   font-family: "lago";
+  font-size: 2.3rem;
 }
 @media screen and (min-width: 600px) {
   header {
@@ -128,6 +129,15 @@ form p {
   margin-left: 20px;
   width: 320px;
 }
+@media screen and (min-width: 600px) {
+  .large {
+    width: 50%;
+  }
+  .large img {
+    margin-right: 0px;
+    width: 430px;
+  }
+}
 
 li {
   font-family: "oswald";
@@ -138,11 +148,22 @@ li {
   margin-left: 30px;
   width: 175px;
 }
+@media screen and (min-width: 600px) {
+  .logo {
+    width: 150px;
+    margin-left: 0px;
+  }
+}
 
 .menu img {
   margin-left: 20px;
   padding-bottom: 5px;
   width: 40px;
+}
+@media screen and (min-width: 600px) {
+  .menu {
+    display: none;
+  }
 }
 
 .names {
@@ -155,6 +176,18 @@ li {
 .names img {
   margin-top: 14px;
   height: 20px;
+}
+@media screen and (min-width: 600px) {
+  .names {
+    width: 20%;
+    display: block;
+  }
+  .names img {
+    margin: -15px 0px;
+  }
+  .names .reviewerName {
+    margin-bottom: -15px;
+  }
 }
 
 p {
@@ -178,9 +211,26 @@ p {
 .products img {
   width: 123px;
 }
+@media screen and (min-width: 600px) {
+  .products ul {
+    margin: -20px;
+  }
+  .products li {
+    padding-top: 30px;
+    width: 50%;
+  }
+  .products li img {
+    width: 160px;
+  }
+}
 
 .pictures ul {
   padding-left: 0px;
+}
+@media screen and (min-width: 600px) {
+  .pictures .pictures ul {
+    display: flex;
+  }
 }
 
 .reviews {
@@ -228,56 +278,8 @@ p {
     flex-flow: row-reverse;
   }
 
-  .large {
-    width: 50%;
-  }
-
-  .large img {
-    margin-right: 0px;
-    width: 430px;
-  }
-
-  .logo {
-    width: 150px;
-    margin-left: 0px;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .names {
-    width: 20%;
-    display: block;
-  }
-
-  .names img {
-    margin: -15px 0px;
-  }
-
-  .names .name {
-    margin-bottom: -15px;
-  }
-
   nav {
     width: 100%;
-  }
-
-  .pictures ul {
-    display: flex;
-  }
-
-  .products li {
-    padding-top: 30px;
-    width: 50%;
-  }
-
-  .products li img {
-    width: 160px;
-  }
-
-  .products ul {
-    margin: -20px;
   }
 
   .reviews ul li {
