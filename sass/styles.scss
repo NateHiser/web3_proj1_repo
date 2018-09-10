@@ -1,3 +1,4 @@
+@import 'header';
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
 a {
@@ -98,45 +99,6 @@ h4 {
 html {
     background-image:url(images/repeat.jpg);
     font-size:62.5%;
-}
-
-header{
-
-    margin: 0 auto;
-
-    nav li {
-        display:none;
-        font-family: "lago";
-        font-size: 2.3rem;
-    }
-
-    @media screen and (min-width:600px) {
-
-        padding-top:35px;
-        padding-left:10px;
-        display:flex;
-
-        nav ul {
-
-              padding-left:0px;
-              display:flex;
-
-              li {
-                  margin-left:12px;
-                  margin-top:10px;
-                  display:block;
-                  font-size:1.5rem;
-            }
-        }
-    }
-
-    @media screen and (min-width:1200px) {
-
-      nav li{
-        margin-left:60px;
-        font-size:2.3rem;
-      }
-    }
 }
 
 input {
@@ -276,6 +238,17 @@ p {
         }
     }
   }
+
+  @media screen and (min-width:1200px) {
+  li{
+      padding-top:45px;
+      width:32%;
+
+      img {
+          width:250px;
+      }
+  }
+}
 }
 
 .pictures {
@@ -288,6 +261,13 @@ p {
     .pictures ul{
         display:flex;
     }
+  }
+  @media screen and (min-width:1200px) {
+      width:65%;
+
+      ul{
+          display:block;
+      }
   }
 }
 .reviews{
@@ -336,6 +316,9 @@ p {
           width:190px;
         }
   }
+  @media screen and (min-width:1200px) {
+    width:300px;
+  }
 }
 
 .thumbnails{
@@ -347,6 +330,8 @@ p {
     margin-left:25px;
     margin-top:10px;
     justify-content:space-around;
+
+
   }
 
   img{
@@ -363,6 +348,13 @@ p {
 
       img{
         width:110px;
+      }
+  }
+
+  @media screen and (min-width:1200px) {
+      flex-flow: nowrap;
+      li {
+          margin-left:70px;
       }
   }
 }
@@ -388,34 +380,4 @@ p {
         display:flex;
         flex-flow:row wrap;
     }
-
-    .pictures{
-        width:65%;
-    }
-
-    .products li{
-        padding-top:45px;
-        width:32%;
-    }
-
-    .products li img {
-        width:250px;
-    }
-
-    .pictures ul{
-        display:block;
-    }
-
-    .thumbnails li{
-        margin-left:70px;
-    }
-
-    .subnav {
-        width:300px;
-    }
-
-    .thumbnails{
-        flex-flow: nowrap;
-    }
-
 }
